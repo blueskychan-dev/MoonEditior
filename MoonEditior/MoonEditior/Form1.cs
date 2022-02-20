@@ -35,7 +35,6 @@ namespace MoonEditior
         public Form1()
         {
             InitializeComponent();
-            MaximizeBox = false;
             this.groupBox1.Visible = false;
             this.button2.Text = "Tab 1 *";
         }
@@ -787,7 +786,7 @@ namespace MoonEditior
 
         private void aboutMoonEditiorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("MoonEditior Version 1.0.0 Alpha\nDeveloper: fusedevgithub");
+            MessageBox.Show("MoonEditior Version 1.1.0 Alpha\nDeveloper: fusedevgithub\nDonate: https://github.com/fusedevgithub/MoonEditior#Donate");
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -803,7 +802,7 @@ namespace MoonEditior
             this.button8.Text = "Tab 7";
             this.button9.Text = "Tab 8";
             this.button3.Text = "Tab 2 *";
-            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -1452,6 +1451,280 @@ namespace MoonEditior
                     this.richTextBox2.Text += output;
 
                     process.WaitForExit();
+                }
+            }
+        }
+
+        private void runAsBatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (tabnow == "1")
+            {
+
+
+                if (path == null)
+                {
+                    MessageBox.Show("Please save or open file first!");
+                    return;
+                }
+            }
+            else if (tabnow == "2")
+            {
+
+
+                if (path2 == null)
+                {
+                    MessageBox.Show("Please save or open file first!");
+                    return;
+                }
+            }
+            else if (tabnow == "3")
+            {
+
+
+                if (path3 == null)
+                {
+                    MessageBox.Show("Please save or open file first!");
+                    return;
+                }
+            }
+            else if (tabnow == "4")
+            {
+
+
+                if (path4 == null)
+                {
+                    MessageBox.Show("Please save or open file first!");
+                    return;
+                }
+            }
+            else if (tabnow == "5")
+            {
+
+
+                if (path5 == null)
+                {
+                    MessageBox.Show("Please save or open file first!");
+                    return;
+                }
+            }
+            else if (tabnow == "6")
+            {
+
+
+                if (path6 == null)
+                {
+                    MessageBox.Show("Please save or open file first!");
+                    return;
+                }
+            }
+            else if (tabnow == "7")
+            {
+
+
+                if (path7 == null)
+                {
+                    MessageBox.Show("Please save or open file first!");
+                    return;
+                }
+            }
+            else if (tabnow == "8")
+            {
+
+
+                if (path8 == null)
+                {
+                    MessageBox.Show("Please save or open file first!");
+                    return;
+                }
+            }
+            this.groupBox1.Visible = true;
+            this.richTextBox2.Text = null;
+            if (tabnow == "1")
+            {
+                File.WriteAllText(path, richTextBox1.Text);
+                using (Process process = new Process())
+                {
+                    process.StartInfo.FileName = "cmd.exe";
+                    process.StartInfo.Arguments = "/K " + path + " && exit";
+                    process.StartInfo.UseShellExecute = false;
+                    process.StartInfo.RedirectStandardOutput = true;
+                    process.Start();
+
+                    // Synchronously read the standard output of the spawned process.
+                    StreamReader reader = process.StandardOutput;
+                    string output = reader.ReadToEnd();
+
+                    // Write the redirected output to this application's window.
+                    this.richTextBox2.Text += output;
+
+                    process.WaitForExit();
+                }
+            }
+            else if (tabnow == "2")
+            {
+                File.WriteAllText(path2, richTextBox1.Text);
+                using (Process process = new Process())
+                {
+                    process.StartInfo.FileName = "cmd.exe";
+                    process.StartInfo.Arguments = "/K " + path2 + " && exit";
+                    process.StartInfo.UseShellExecute = false;
+                    process.StartInfo.RedirectStandardOutput = true;
+                    process.Start();
+
+                    // Synchronously read the standard output of the spawned process.
+                    StreamReader reader = process.StandardOutput;
+                    string output = reader.ReadToEnd();
+
+                    // Write the redirected output to this application's window.
+                    this.richTextBox2.Text += output;
+
+                    process.WaitForExit();
+                }
+            }
+            else if (tabnow == "3")
+            {
+                File.WriteAllText(path3, richTextBox1.Text);
+                using (Process process = new Process())
+                {
+                    process.StartInfo.FileName = "cmd.exe";
+                    process.StartInfo.Arguments = "/K " + path3 + " && exit";
+                    process.StartInfo.UseShellExecute = false;
+                    process.StartInfo.RedirectStandardOutput = true;
+                    process.Start();
+
+                    // Synchronously read the standard output of the spawned process.
+                    StreamReader reader = process.StandardOutput;
+                    string output = reader.ReadToEnd();
+
+                    // Write the redirected output to this application's window.
+                    this.richTextBox2.Text += output;
+
+                    process.WaitForExit();
+                }
+            }
+            else if (tabnow == "4")
+            {
+                File.WriteAllText(path4, richTextBox1.Text);
+                using (Process process = new Process())
+                {
+                    process.StartInfo.FileName = "cmd.exe";
+                    process.StartInfo.Arguments = "/K " + path4 + " && exit";
+                    process.StartInfo.UseShellExecute = false;
+                    process.StartInfo.RedirectStandardOutput = true;
+                    process.Start();
+
+                    // Synchronously read the standard output of the spawned process.
+                    StreamReader reader = process.StandardOutput;
+                    string output = reader.ReadToEnd();
+
+                    // Write the redirected output to this application's window.
+                    this.richTextBox2.Text += output;
+
+                    process.WaitForExit();
+                }
+            }
+            else if (tabnow == "5")
+            {
+                File.WriteAllText(path5, richTextBox1.Text);
+                using (Process process = new Process())
+                {
+                    process.StartInfo.FileName = "cmd.exe";
+                    process.StartInfo.Arguments = "/K " + path5 + " && exit";
+                    process.StartInfo.UseShellExecute = false;
+                    process.StartInfo.RedirectStandardOutput = true;
+                    process.Start();
+
+                    // Synchronously read the standard output of the spawned process.
+                    StreamReader reader = process.StandardOutput;
+                    string output = reader.ReadToEnd();
+
+                    // Write the redirected output to this application's window.
+                    this.richTextBox2.Text += output;
+
+                    process.WaitForExit();
+                }
+            }
+            else if (tabnow == "6")
+            {
+                File.WriteAllText(path6, richTextBox1.Text);
+                using (Process process = new Process())
+                {
+                    process.StartInfo.FileName = "cmd.exe";
+                    process.StartInfo.Arguments = "/K " + path6 + " && exit";
+                    process.StartInfo.UseShellExecute = false;
+                    process.StartInfo.RedirectStandardOutput = true;
+                    process.Start();
+
+                    // Synchronously read the standard output of the spawned process.
+                    StreamReader reader = process.StandardOutput;
+                    string output = reader.ReadToEnd();
+
+                    // Write the redirected output to this application's window.
+                    this.richTextBox2.Text += output;
+
+                    process.WaitForExit();
+                }
+            }
+            else if (tabnow == "7")
+            {
+                File.WriteAllText(path7, richTextBox1.Text);
+                using (Process process = new Process())
+                {
+                    process.StartInfo.FileName = "cmd.exe";
+                    process.StartInfo.Arguments = "/K " + path7 + " && exit";
+                    process.StartInfo.UseShellExecute = false;
+                    process.StartInfo.RedirectStandardOutput = true;
+                    process.Start();
+
+                    // Synchronously read the standard output of the spawned process.
+                    StreamReader reader = process.StandardOutput;
+                    string output = reader.ReadToEnd();
+
+                    // Write the redirected output to this application's window.
+                    this.richTextBox2.Text += output;
+
+                    process.WaitForExit();
+                }
+            }
+            else if (tabnow == "8")
+            {
+                File.WriteAllText(path8, richTextBox1.Text);
+                using (Process process = new Process())
+                {
+                    process.StartInfo.FileName = "cmd.exe";
+                    process.StartInfo.Arguments = "/K " + path8 + " && exit";
+                    process.StartInfo.UseShellExecute = false;
+                    process.StartInfo.RedirectStandardOutput = true;
+                    process.Start();
+
+                    // Synchronously read the standard output of the spawned process.
+                    StreamReader reader = process.StandardOutput;
+                    string output = reader.ReadToEnd();
+
+                    // Write the redirected output to this application's window.
+                    this.richTextBox2.Text += output;
+
+                    process.WaitForExit();
+                }
+            }
+        }
+
+        private void resizeFontsTerminalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var asksize = Interaction.InputBox("New font Size", "Change Fonts Size for Terminal", richTextBox2.Font.Size.ToString());
+            if (asksize == "")
+            {
+
+            }
+            else
+            {
+                try
+                {
+                    this.richTextBox2.Font = new Font("Arial", int.Parse(asksize));
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("ERROR: " + ex.Message);
                 }
             }
         }

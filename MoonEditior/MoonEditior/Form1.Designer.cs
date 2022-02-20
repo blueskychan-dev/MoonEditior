@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("All Tab");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("All Tab");
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
@@ -42,6 +42,7 @@
             this.runDebugTerminalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.runAsPythonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.runAsLuaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.runAsBatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripDropDownButton();
             this.aboutMoonEditiorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -56,12 +57,16 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.resizeFontsTerminalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.Menu;
@@ -79,9 +84,9 @@
             this.toolStripButton1,
             this.toolStripButton2,
             this.toolStripButton3});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Location = new System.Drawing.Point(145, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(893, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(748, 25);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -123,7 +128,8 @@
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sizeToolStripMenuItem});
+            this.sizeToolStripMenuItem,
+            this.resizeFontsTerminalToolStripMenuItem});
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
@@ -133,8 +139,8 @@
             // sizeToolStripMenuItem
             // 
             this.sizeToolStripMenuItem.Name = "sizeToolStripMenuItem";
-            this.sizeToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
-            this.sizeToolStripMenuItem.Text = "Size";
+            this.sizeToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.sizeToolStripMenuItem.Text = "Resize fonts";
             this.sizeToolStripMenuItem.Click += new System.EventHandler(this.sizeToolStripMenuItem_Click_1);
             // 
             // toolStripButton2
@@ -143,7 +149,8 @@
             this.toolStripButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.runDebugTerminalToolStripMenuItem,
             this.runAsPythonToolStripMenuItem,
-            this.runAsLuaToolStripMenuItem});
+            this.runAsLuaToolStripMenuItem,
+            this.runAsBatToolStripMenuItem});
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
@@ -171,6 +178,13 @@
             this.runAsLuaToolStripMenuItem.Text = "Run as Lua";
             this.runAsLuaToolStripMenuItem.Click += new System.EventHandler(this.runAsLuaToolStripMenuItem_Click);
             // 
+            // runAsBatToolStripMenuItem
+            // 
+            this.runAsBatToolStripMenuItem.Name = "runAsBatToolStripMenuItem";
+            this.runAsBatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.runAsBatToolStripMenuItem.Text = "Run as Bat";
+            this.runAsBatToolStripMenuItem.Click += new System.EventHandler(this.runAsBatToolStripMenuItem_Click);
+            // 
             // toolStripButton3
             // 
             this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -194,10 +208,11 @@
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.richTextBox2);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox1.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.groupBox1.Location = new System.Drawing.Point(0, 314);
+            this.groupBox1.Location = new System.Drawing.Point(145, 315);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(893, 152);
+            this.groupBox1.Size = new System.Drawing.Size(748, 152);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Terminal";
@@ -216,6 +231,7 @@
             // richTextBox2
             // 
             this.richTextBox2.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox2.ForeColor = System.Drawing.SystemColors.Window;
             this.richTextBox2.Location = new System.Drawing.Point(6, 19);
             this.richTextBox2.Name = "richTextBox2";
@@ -226,14 +242,15 @@
             // treeView1
             // 
             this.treeView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.treeView1.Dock = System.Windows.Forms.DockStyle.Left;
             this.treeView1.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.treeView1.Location = new System.Drawing.Point(0, 28);
+            this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode8.Name = "filelist";
-            treeNode8.Text = "All Tab";
+            treeNode3.Name = "filelist";
+            treeNode3.Text = "All Tab";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode8});
-            this.treeView1.Size = new System.Drawing.Size(145, 427);
+            treeNode3});
+            this.treeView1.Size = new System.Drawing.Size(145, 467);
             this.treeView1.TabIndex = 2;
             // 
             // button9
@@ -316,6 +333,13 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // resizeFontsTerminalToolStripMenuItem
+            // 
+            this.resizeFontsTerminalToolStripMenuItem.Name = "resizeFontsTerminalToolStripMenuItem";
+            this.resizeFontsTerminalToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.resizeFontsTerminalToolStripMenuItem.Text = "Resize fonts terminal";
+            this.resizeFontsTerminalToolStripMenuItem.Click += new System.EventHandler(this.resizeFontsTerminalToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -334,7 +358,6 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.richTextBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "MoonEditior - Lightweight IDE";
             this.toolStrip1.ResumeLayout(false);
@@ -372,6 +395,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ToolStripMenuItem runAsPythonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem runAsLuaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem runAsBatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem resizeFontsTerminalToolStripMenuItem;
     }
 }
 
