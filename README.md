@@ -21,6 +21,7 @@ MoonEditior is **Lightest Editior** same notepad but doing than notepad.
 # Bugs
 * Terminal is **NOT** Show error for python script.
 * Click save and click cancel will make editior crash ~~(**Fixed by show error without crash don't panic**)~~ Nevermind.
+* New line is bug on windows 7.
 * have bugs? report in [Github](https://github.com/fusedevgithub/MoonEditior/issues)
 # Donate
 If you think this project is helpful? try donate?
