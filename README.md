@@ -16,11 +16,11 @@ MoonEditior is **Lightest Editior** same notepad but doing than notepad.
 * You can open file in same window just 8 file (1 file per 1 tab)
 * No HELPER about code be like other ide.
 * Terminal is limited ask for input (if script have ask for input that will show blank command prompt for input)
-* ~~Maximize window is not support (**Now Locked**)~~ Now Support in 1.1.0 alpha. [Thanks twistynado-official for tip](https://github.com/twistynado-official/)
+* ~~Maximize window is not support (**Now Locked**)~~ Now Support in 1.1.0 alpha or newer. [Thanks twistynado-official for tip](https://github.com/twistynado-official/)
 * Terminal closed button is bugs you need to resize window to find and click it.
 # Bugs
 * Terminal is **NOT** Show error for python script.
-* Click save and click cancel will make editior crash (**Fixed by show error without crash don't panic**)
+* Click save and click cancel will make editior crash ~~(**Fixed by show error without crash don't panic**)~~ Nevermind.
 * have bugs? report in [Github](https://github.com/fusedevgithub/MoonEditior/issues)
 # Donate
 If you think this project is helpful? try donate?
